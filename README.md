@@ -1,1 +1,1 @@
-# hex_ros_urdf_template
+# xpkg_urdf_template
