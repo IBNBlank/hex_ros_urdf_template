@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package format="3">
-    <name>xpkg_urdf_template</name>
+    <name>hex_ros_urdf_template</name>
     <version>0.1.0</version>
-    <description>The xpkg_urdf_template package</description>
-    <maintainer email="template@template.example">template</maintainer>
+    <description>The hex_ros_urdf_template package</description>
+    <maintainer email="dzr159@gmail.com">Dong Zhaorui</maintainer>
     <license>Apache 2.0</license>
 
     <buildtool_depend condition="$ROS_VERSION == 1">catkin</buildtool_depend>

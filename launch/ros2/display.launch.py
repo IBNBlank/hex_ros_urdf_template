@@ -9,9 +9,9 @@ from launch_ros.substitutions import FindPackageShare
 
 
 def generate_launch_description():
-    urdf_pkg_path = FindPackageShare("xpkg_urdf_template")
+    urdf_pkg_path = FindPackageShare("hex_ros_urdf_template")
     rviz_config_path = PathJoinSubstitution(
-        [urdf_pkg_path, "config", "ROS2", "urdf.rviz"])
+        [urdf_pkg_path, "config", "ros2", "display.rviz"])
     urdf_file_path = PathJoinSubstitution(
         [urdf_pkg_path, "urdf", "model.urdf"])
 
@@ -28,8 +28,8 @@ def generate_launch_description():
                                 'robot_description': description_content,
                             }])
 
-    joint_state_node = Node(package='joint_state_publisher',
-                            executable='joint_state_publisher')
+    joint_state_node = Node(package='joint_state_publisher_gui',
+                            executable='joint_state_publisher_gui')
 
     rviz_node = Node(name="rviz2",
                      package="rviz2",
